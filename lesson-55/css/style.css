@@ -1,0 +1,34 @@
+body {
+    color: #fff;
+    text-align:center;
+
+}
+.block {
+    width: 760px;
+    height: 660px;
+    border: 2px dashed #000000;
+    position: fixed;
+    left: 40vw;
+}
+
+.square-red {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(20deg, #d76500 2%, #ae2727 100%);
+    transform: translate(900px, 456px);
+}
+
+.square-green {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(30deg, #12d700 2%, #05a784 100%);
+    transform:translate(675px, -105px) rotate(130deg);
+}
+
+
+.square-blue {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(20deg, #a500d7 2%, #0551a7 100%);
+    transform: translate(1052px, -347px) rotate(180deg) scale(1.5);
+}

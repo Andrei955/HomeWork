@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Medium Italic"), local("Montserrat-MediumItalic"),
+      url(../fonts/Montserrat-MediumItalic.woff2) format("woff2"),
+      url(../fonts/Montserrat-MediumItalic.woff) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}

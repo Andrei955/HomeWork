@@ -1,0 +1,39 @@
+body {
+    background: #343334;
+    color: #fff;
+    font-size: 4rem;
+    font-family: sans-serif;
+}
+
+.conteiner {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6%;
+}
+
+
+.heading::before {
+    content: "";
+    position: absolute;
+    left:33% ;
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    background: #fb6365;
+    border: 4px solid #fff;
+    border-radius: 100px;
+
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    right: 33%;
+    top: -10px;
+    width: 100px;
+    height: 100px;
+    background: #5f5eef;
+    border: 4px solid #fff;
+    border-radius: 100px;
+}

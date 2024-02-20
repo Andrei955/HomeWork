@@ -1,0 +1,48 @@
+body {
+  background: #262628;
+  color: #fff;
+}
+
+
+.block__text {
+  font-family: "Montserrat";
+  width: 50vw;
+  height: 50vh;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+/* ======================================= */
+
+.shapes {
+  position: fixed;
+  left: 50%;
+  bottom: 100px;
+  right: 50px
+  
+
+}
+
+
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #d03234;
+  border-radius: 100px;
+  position: relative;
+  z-index: 2;
+  left: 80px;
+  top: 50px;
+}
+
+.rectangle {
+  width: 620px;
+  height: 100px;
+  background: #fff;
+  border-radius: 10px;
+/*   position: fixed;
+  left: 50%;
+  bottom: 100px;
+  right: 50px */
+}
