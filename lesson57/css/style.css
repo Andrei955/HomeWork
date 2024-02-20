@@ -16,7 +16,7 @@ body {
 .heading::before {
     content: "";
     position: absolute;
-    left:33% ;
+    left:29% ;
     top: -10px;
     width: 100px;
     height: 100px;
@@ -29,7 +29,7 @@ body {
 .heading::after {
     content: "";
     position: absolute;
-    right: 33%;
+    right: 29%;
     top: -10px;
     width: 100px;
     height: 100px;
