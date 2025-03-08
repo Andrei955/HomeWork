@@ -19,8 +19,8 @@ h1 {
     content: "";
     display: block;
     position: absolute;
-    left: 250px;
-    top: 15px;
+    left: -95px;
+    top: 20px;
     width: 80px;
     height: 80px;
     background: #5a65fa;
@@ -30,12 +30,12 @@ h1 {
 
 }
 
-.block::after {
+h1::after {
     content: "";
     display: block;
-    position: relative;
-    right: 100px;
-    bottom: 30px;
+    position: absolute;
+    left: 250px;
+    top: -15px;
     width: 80px;
     height: 80px;
     background: #f36262;
