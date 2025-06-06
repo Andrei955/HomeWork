@@ -229,6 +229,7 @@ body {
 }
 
 .hero__img {
+    pointer-events: none
     margin-right: 247px;
     position: relative;
 }
