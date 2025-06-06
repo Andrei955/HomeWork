@@ -229,12 +229,12 @@ body {
 }
 
 .hero__img {
-    pointer-events: none
     margin-right: 247px;
     position: relative;
 }
 
 .hero__img>img {
+    pointer-events: none;
     width: 100%;
 }
 
