@@ -1,0 +1,195 @@
+.main__karaoke-rooms {
+    position: relative;
+}
+
+.karaoke-rooms__decor {
+    background: #131517;
+}
+
+.karaoke-rooms__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.karaoke-rooms__choice {
+    padding-top: 110px;
+}
+
+.karaoke-rooms__text {
+    margin-bottom: 100px;
+}
+
+.karaoke-rooms__title {
+    font-size: clamp(23px, 7vw, 75px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    position: absolute;
+    z-index: 2;
+}
+
+.karaoke-rooms__sub-title {
+    font-size: clamp(14px, 3.5vw, 24px);
+    text-transform: uppercase;
+    line-height: 40px;
+    padding-top: 146px;
+}
+
+.tab-conrols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #606571;
+    text-transform: uppercase;
+}
+
+.tab-conrols__link {
+    display: block;
+    padding: 0px 0px;
+    white-space: nowrap;
+
+    transition: var(--transition);
+}
+
+.tab-conrols__link:hover {
+    color: #ffc619;
+}
+
+.tab-conrols__link--active {
+    color: #ffc619;
+}
+
+.karaoke-rooms__tab-content {
+    margin-bottom: 78px;
+}
+
+.karaoke-rooms__hall-item {
+    font-size: 18px;
+    letter-spacing: 1.3px;
+}
+
+.karaoke-rooms__hall-list {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 10px 12px;
+    width: max-content;
+    background: linear-gradient(96.84deg, #f690203d, #f6902000 100%);
+    margin-bottom: 11px;
+}
+
+.karaoke-rooms__hall-list:last-child {
+    margin-bottom: 0px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content--show {
+    display: block;
+}
+
+
+.karaoke-rooms__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 61px;
+}
+
+.karaoke-rooms__prev,
+.karaoke-rooms__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: #2e3441;
+    transition: var(--transition);
+}
+
+.karaoke-rooms__prev:hover,
+.karaoke-rooms__next:hover {
+    background: #282b32;
+}
+
+.custom-pagination-left {
+    font-size: 35px;
+}
+
+.custom-pagination-right,
+.custom-pagination-center {
+    color: #737a8b;
+}
+
+.karaoke-rooms__pagination {
+    text-align: center;
+}
+
+.karaoke-rooms__button {
+    max-width: 277px;
+}
+
+.karaoke-rooms__gallery {
+    max-width: 1407px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.karaoke-rooms__gallery.karaoke-rooms__gallery--show {
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.karaoke-rooms__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.karaoke-rooms__thumbs-wrapper {
+    align-items: center;
+}
+
+.karaoke-rooms__thumb-slide {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: var(--transition);
+    position: relative;
+}
+
+.swiper-slide-thumb-active.karaoke-rooms__thumb-slide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #ffc61966;
+    background-image: url(../image/icons/eye.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.swiper-slide-thumb-active.karaoke-rooms__thumb-slide {
+    opacity: 1;
+}
+
+.karaoke-rooms__thumb-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,138 @@
+.advantages__decor {
+    background: #191b20;
+}
+
+.advantages__decor-item-three {
+    background: linear-gradient(180deg, rgba(96, 101, 113, 0) 0%, rgba(96, 101, 113, 0.05) 100%);
+}
+
+.advantages__decor-block {
+    position: absolute;
+    top: 15%;
+    right: -5%;
+    max-width: 787px;
+}
+
+.decor-block::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #191b2000 0%, #191b20 70%);
+}
+
+.advantages__decor-block img {
+    width: 100%;
+}
+
+.advantages__decor-klipartz {
+    position: absolute;
+    top: 15%;
+    left: 74%;
+    max-width: 450px;
+}
+
+.advantages__decor-klipartz::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #191b20ca 0%, transparent 100%);
+}
+
+.advantages {
+    position: relative;
+}
+
+.advantages__inner {
+    padding: 100px 0 110px;
+    display: flex;
+    gap: 109px;
+    align-items: flex-end;
+}
+
+.advantages__title {
+    font-size: clamp(30px, 8vw, 75px);
+    max-width: clamp(350px, 70vw, 1350px);
+    font-weight: 900;
+    letter-spacing: 2.25px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+}
+
+.advantages__text {
+    font-size: clamp(18px, 4vw, 24px);
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+}
+
+.advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1360px;
+}
+
+.advantages__item {
+    max-width: 433px;
+    width: 100%;
+    padding: 40px;
+    background: #282b32;
+}
+
+.advantages__item:nth-child(even) {
+    background: #202124;
+}
+
+.advantages__img {
+    margin-bottom: 30px;
+    max-width: 88px;
+}
+
+.advantages__img img {
+    width: 100%;
+}
+
+.advantages__item-text {
+    font-size: clamp(14px, 3vw, 18px);
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    margin-bottom: 16px;
+}
+
+.advantages__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.advantages__subitem img {
+    margin-right: 10px;
+}
+
+.advantages__subitem span {
+    color: #f69020;
+    font-weight: 700;
+}
+
+.advantages__subitem {
+    color: #c5c5c5;
+    letter-spacing: 0.48px;
+}
+
+.advantages__subitem--lheight {
+    line-height: 24px;
+}
+
+.advantages__subitem--lheight img {
+    margin-top: 3px;
+}
+
+.advantages-button {
+    max-width: 277px;
+}

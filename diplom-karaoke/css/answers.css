@@ -1,0 +1,160 @@
+/* ============= answers  ====================================== */
+.main__answers {
+    padding: 120px 0 130px;
+}
+
+.answers {
+    position: relative;
+}
+
+.answers__decor {
+    background: #191b20;
+}
+
+.answers__decor-item-three {
+    background: linear-gradient(180deg, #60657100, #6065710d 100%);
+}
+
+.answers__decor-block {
+    position: absolute;
+    top: 0%;
+    right: -5%;
+    max-width: 787px;
+}
+
+.answers__inner {
+    display: flex;
+    align-items: flex-end;
+    gap: 77px;
+}
+
+.answers__title {
+    font-size: clamp(23px, 7vw, 75px);
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 64px;
+}
+
+.answers__sub-title {
+    font-size: clamp(14px, 3.5vw, 24px);
+    text-transform: uppercase;
+    margin-bottom: 64px;
+    line-height: 20px;
+}
+
+.accordion-list__item {
+    margin-bottom: 10px;
+}
+
+/* Отступ последней вкладки  */
+.accordion-list__item:last-child {
+    margin-bottom: 0;
+}
+
+/* Кнопка */
+.accordion-list__control {
+    padding: 25px 30px;
+    width: 100%;
+    background: #282b32;
+    text-align: left;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    color: #fff;
+    font-size: clamp(14px, 2.5vw, 18px);
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    transition: var(--transition);
+}
+
+.accordion-list__control:hover {
+    background: #343740;
+}
+
+.accordion-list__item--opened .accordion-list__control {
+    padding-bottom: 20px;
+}
+
+.accordion-list__control-icon {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    box-shadow: 0px 9px 16px 0px #00000036;
+    background: #34373f;
+    transform: rotate(90deg);
+}
+
+.accordion-list__control:hover .accordion-list__control-icon {
+    transform: rotate(270deg);
+    box-shadow: 0px 9px 16px 0px #00000036;
+}
+
+.accordion-list__item--opened .accordion-list__control-icon {
+    transform: rotate(270deg);
+}
+
+.accordion-list__control-icon path {
+    stroke: #ffc619;
+}
+
+.accordion-list__item--opened .accordion-list__control-icon path {
+    stroke: #606571;
+}
+
+.accordion-list__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.accordion-content {
+    padding: 25px 20px;
+    line-height: 31px;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: #c5c5c5;
+}
+
+.answers__cal-plating {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cal-plating__text {
+    font-size: clamp(24px, 3.5vw, 32px);
+
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    line-height: clamp(42px, 3.5vw, 52px);
+    max-width: 540px;
+    text-align: left;
+
+    margin-bottom: 50px;
+}
+
+.cal-plating__text span {
+    color: #f69020;
+}
+
+.cal-plating__image {
+    margin-bottom: 63px;
+    max-width: 553px;
+}
+
+.cal-plating__image img {
+    width: 100%;
+}
+
+.cal-plating__button {
+    max-width: 277px;
+}

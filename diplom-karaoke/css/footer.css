@@ -1,0 +1,77 @@
+.footer {
+    position: relative;
+}
+.footer__decor {
+    background: #131517;
+}
+.footer__decor-item-two {
+    background: linear-gradient(180deg, #60657100 0%, #6065710d 100%);
+}
+
+.footer__inner {
+    margin: 100px 0;
+    display: flex;
+    gap: 63px;
+}
+
+.footer__button-up--min {
+    display: none;
+}
+
+.footer__menu {
+    display: flex;
+    gap: 55px;
+}
+.footer__button {
+    width: 232px;
+    background: none;
+    color: #fff;
+    border: 1px solid #f69020;
+}
+
+.footer__menu-hidden {
+    display: none;
+}
+
+.footer__menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__button-up {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__button-img {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #2e3441;
+    transition: var(--transition);
+}
+
+.footer__button-up:hover .footer__button-img {
+    box-shadow: 0 0 20px #2e3441;
+}
+
+.footer__button-up::after {
+    content: "Подняться вверх";
+    display: inline-block;
+    transform: rotate(-90deg) translateX(-70%);
+
+    color: #2e3441;
+
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}

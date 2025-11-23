@@ -1,0 +1,151 @@
+/* ============= telegram-booking  ====================================== */
+.telegram-booking {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.telegram-booking__decor {
+    background: #131517;
+}
+.telegram-booking__decor-item-two {
+    background: linear-gradient(180deg, rgba(96, 101, 113, 0) 0%, rgba(96, 101, 113, 0.05) 100%);
+}
+.telegram-booking__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding: 110px 0 70px;
+}
+.telegram-booking__title {
+    font-size: clamp(23px, 7vw, 75px);
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 68px;
+}
+.telegram-booking__sub-title {
+    font-size: clamp(14px, 3.5vw, 24px);
+    text-transform: uppercase;
+}
+.telegram-booking__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+    font-size: 20px;
+}
+.telegram-booking__prev,
+.telegram-booking__next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: #2e3441;
+    transition: var(--transition);
+}
+.telegram-booking__prev:hover,
+.telegram-booking__next:hover {
+    background: #282b32;
+}
+.custom-pagination-left {
+    font-size: 35px;
+}
+.custom-pagination-right,
+.custom-pagination-center {
+    color: #737a8b;
+}
+.telegram-booking__pagination {
+    text-align: center;
+}
+.telegram-booking__slider {
+    margin-left: 74px;
+    padding-bottom: 110px;
+}
+.telegram-booking__wrapper {
+    min-height: 620px;
+    align-items: flex-end;
+}
+
+.telegram-booking__slide {
+    padding: 0 20px;
+}
+.telegram-booking__scrin {
+    margin-bottom: 38px;
+    position: relative;
+    display: inline-block;
+    opacity: 0.6;
+    transition: var(--transition);
+}
+.swiper-slide-active .telegram-booking__scrin {
+    opacity: 1;
+}
+
+.telegram-booking__scrin::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../image/phone/ramka.png) 50% 50% / cover no-repeat;
+    width: 117%;
+    height: 110%;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+.swiper-slide-active .telegram-booking__scrin::before {
+    opacity: 1;
+    visibility: visible;
+}
+.telegram-booking__scrin::after {
+    content: attr(data-slide-number);
+    position: absolute;
+    top: -10%;
+    right: -15%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61px;
+    height: 61px;
+    background: #f69020;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+.swiper-slide-active .telegram-booking__scrin::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.telegram-booking__scrin img {
+    max-width: clamp(206.77px, 20vw, 252px);
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+.telegram-booking__step {
+    display: flex;
+    align-items: center;
+    line-height: 20px;
+    white-space: nowrap;
+    gap: 25px;
+}
+.telegram-booking__step-text {
+    display: flex;
+    flex-direction: column;
+}
+.telegram-booking__link-tg {
+    color: #f69020;
+    font-weight: 700;
+}

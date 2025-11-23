@@ -1,0 +1,592 @@
+@import url(../css/global.css);
+@import url(../css/header.css);
+@import url(../css/karaoke-rooms.css);
+@import url(../css/advantages.css);
+@import url(../css/telegram-booking.css);
+@import url(../css/answers.css);
+@import url(../css/footer.css);
+
+
+
+/* ============= MEDIA ====================================== */
+
+@media (max-width: 1800px) {
+    .header__decor-item-two {
+        background: none;
+    }
+
+    /* ============= advantages  ====================================== */
+
+    .advantages__decor-item-three {
+        background: none;
+    }
+
+    /* ============= telegram-booking  ====================================== */
+    .telegram-booking__slider {
+        max-width: 1450px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* ============= answers  ====================================== */
+
+    .answers__decor-item-three {
+        background: none;
+    }
+
+    /* ===== FOOTER =========================== */
+
+    .footer__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__icon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__button-up--min {
+        display: flex;
+        position: relative;
+    }
+
+    .footer__menu {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 63px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+    }
+
+    .info__item:nth-child(1) {
+        order: 2;
+    }
+
+    .footer__button-up--max {
+        display: none;
+    }
+}
+
+@media (max-width:1680px) {
+    .karaoke-rooms__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .karaoke-rooms__choice {
+        padding-top: 55px;
+    }
+
+    .karaoke-rooms__text {
+        margin-bottom: 40px;
+    }
+
+    .karaoke-rooms__sub-title {
+        padding-top: 110px;
+    }
+
+    .karaoke-rooms__nav-button-content {
+        position: absolute;
+        bottom: 56px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 470px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-conrols {
+        justify-content: center;
+    }
+
+    .karaoke-rooms__gallery {
+        max-width: 100vw;
+        margin-bottom: 400px;
+    }
+
+    .karaoke-rooms__tab-content {
+        margin-bottom: 30px;
+    }
+
+    .karaoke-rooms__nav {
+        margin-bottom: 27px;
+    }
+
+    .karaoke-rooms__button {
+        max-width: none;
+        margin: 0 20px;
+        width: 95%;
+    }
+}
+
+@media (max-width: 1450px) {
+
+    .decor__line-three,
+    .decor__line-two {
+        display: none;
+    }
+
+    .decor__item-one,
+    .decor__item-five {
+        max-width: 12vw;
+    }
+
+    .header__decor-line-one,
+    .header__decor-line-four {
+        height: 87%;
+    }
+
+    .header__decor-image-bg {
+        top: 20%;
+    }
+
+    .header__decor-image-dancer {
+        transform: translate(0%, 8%);
+    }
+
+    .header__decor-image-birka {
+        transform: translate(5%, -5%);
+    }
+
+    .header__decor-image-birka::before {
+        display: none;
+    }
+
+    /* ===== HEADER-TOP =========================== */
+    .header-top__menu {
+        transform-origin: top right;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale3d(0.1, 0.1, 1) rotateY(90deg);
+        width: 100%;
+        padding: 140px 40px 40px;
+        background: #282b32;
+    }
+
+    .header-top__burger {
+        display: flex;
+    }
+
+    .header-top__burger {
+        display: flex;
+    }
+
+    .body--opened-burger .header-top__menu {
+        visibility: visible;
+        opacity: 1;
+        transform: scale3d(1, 1, 1) rotateY(0deg);
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2vh;
+    }
+
+    .info__item:nth-child(1) {
+        order: 2;
+    }
+
+    .info-item:nth-child(2) {
+        order: 1;
+    }
+
+    .header-top__buttons {
+        flex-direction: column;
+    }
+
+    /* ======== HEADER-HERO ============================== */
+    .hero__offer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .hero__offer img {
+        width: 39px;
+        height: 39px;
+    }
+
+    .hero__offer-item--width {
+        max-width: 150px;
+    }
+
+    .hero__buttons {
+        display: block;
+    }
+
+    .hero__telegram-link {
+        display: none;
+    }
+
+    .hero__footer-item {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    /* ===== advantages =========================== */
+
+    .advantages__decor-klipartz {
+        top: 18%;
+        left: 73%;
+    }
+
+    .advantages__item {
+        padding: 25px;
+    }
+
+    /* ===== telegram-booking =========================== */
+    .telegram-booking__decor-item-two {
+        background: none;
+    }
+
+    .telegram-booking__slider {
+        max-width: 1000px;
+    }
+
+    .telegram-booking__slide {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* ===== advantages =========================== */
+    .advantages__inner {
+        gap: 58px;
+    }
+
+    .advantages__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .advantages__decor-klipartz {
+        top: 35%;
+        left: 68%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header__decor-image-bg {
+        top: 30%;
+        right: 0;
+        width: 100%;
+    }
+
+    .header__decor-image-dancer {
+        transform: translate(-25%, 20%);
+    }
+
+    .header__decor-image-birka {
+        transform: translate(5%, -9%);
+    }
+
+    /* ======== HEADER-HERO ============================== */
+    .hero__inner {
+        margin: 12.96vw 0 9.1vw;
+    }
+
+    .hero__title-one {
+        margin-bottom: 5vw;
+    }
+
+    .hero__title-two {
+        margin-bottom: 7.4vw;
+    }
+
+    .hero__subtitle {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .hero__button {
+        max-width: 223px;
+        padding: 20px 25px;
+        font-size: 11px;
+    }
+
+    /* ======== HEADER-FOOTER ============================== */
+
+    .hero__footer-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero__footer-item {
+        padding: 10px;
+    }
+
+    .hero__footer-img {
+        max-width: 50px;
+    }
+
+    /* ===== advantages =========================== */
+    .advantages__decor-block {
+        position: absolute;
+        top: auto;
+        bottom: 0%;
+        right: auto;
+        left: -5%;
+        max-width: 268px;
+    }
+
+    .advantages__decor-klipartz {
+        top: auto;
+        bottom: 0;
+        left: 0;
+    }
+
+    .advantages__decor-klipartz img {
+        max-width: 163px;
+    }
+
+    .advantages__decor-klipartz::after {
+        height: 150px;
+        background: linear-gradient(to top, #191b20 0%, transparent 100%);
+    }
+
+    .advantages__decor-klipartz::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(to bottom, #191b20 0%, transparent 100%);
+    }
+
+    .advantages__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* ===== telegram-booking =========================== */
+    .telegram-booking__inner {
+        margin-bottom: -50px;
+    }
+
+    .telegram-booking__slider {
+        max-width: 630px;
+    }
+
+    /* ===== answers =========================== */
+    .answers__decor-block {
+        top: auto;
+        left: 3%;
+        bottom: 13%;
+    }
+
+    .answers__inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 850px) {
+    .header__decor-image-dancer {
+        transform: translate(-25%, 33%);
+    }
+
+    .header__decor-image-birka {
+        transform: translate(13%, -16%);
+    }
+}
+
+@media (max-width: 650px) {
+    .header__decor-image-dancer {
+        transform: translate(-5%, 49%);
+    }
+
+    .hero__offer {
+        margin-bottom: 130px;
+    }
+
+    /* ===== karaoke-rooms =========================== */
+        .karaoke-rooms__sub-title {
+        padding-top: 80px;
+    }
+
+    /* ===== advantages =========================== */
+
+    .answers__decor-block {
+        top: auto;
+        left: -10%;
+        bottom: 5%;
+    }
+
+    .advantages__inner {
+        padding: 60px 0 54px;
+    }
+
+    .advantages__list {
+        display: block;
+        column-count: 2;
+        column-gap: 12px;
+    }
+
+    .advantages__title {
+        margin-bottom: 40px;
+    }
+
+    .advantages__text {
+        margin-bottom: 40px;
+    }
+
+    .advantages__item {
+        display: inline-block;
+        width: 100%;
+        break-inside: avoid;
+        margin-bottom: 12px;
+        padding: 18px;
+        font-size: 13px;
+    }
+
+    .advantages__img {
+        margin-bottom: 15px;
+        max-width: 44px;
+    }
+
+    .advantages-button {
+        max-width: 400px;
+    }
+
+    /* ===== telegram-booking =========================== */
+    .telegram-booking {
+        padding-bottom: 166px;
+        position: relative;
+    }
+
+    .telegram-booking__inner {
+        margin-bottom: -108px;
+        padding: 70px 0 70px;
+    }
+
+    .telegram-booking__title {
+        margin-bottom: 30px;
+    }
+
+    .telegram-booking__nav {
+        position: absolute;
+        bottom: 4%;
+        max-width: 200px;
+    }
+
+    .telegram-booking__prev,
+    .telegram-booking__next {
+        width: 52px;
+        height: 52px;
+    }
+
+    .custom-pagination-left {
+        font-size: 25px;
+    }
+
+    .custom-pagination-center,
+    .custom-pagination-right {
+        font-size: 16px;
+    }
+
+    .telegram-booking__slider {
+        max-width: 273px;
+    }
+
+    /* ===== answers =========================== */
+    .main__answers {
+        padding: 60px 0 50px;
+    }
+
+    .accordion-list__control {
+        padding: 25px 30px;
+    }
+
+    .cal-plating__button {
+        padding: 20px;
+        max-width: none;
+    }
+
+    /* ===== FOOTER =========================== */
+
+    .footer__menu {
+        display: none;
+    }
+
+    .footer__menu-hidden {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    .header__decor-image-dancer {
+        transform: translate(-20%, 42%);
+    }
+
+    /* ===== HEADER-TOP =========================== */
+
+    .header-top__burger-map {
+        width: 50px;
+        height: 50px;
+    }
+
+    .body--opened-burger .header-top__menu {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        top: 0;
+        right: 0;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        padding: 140px 20px 40px;
+        background: #282b32;
+    }
+
+    /* ======== HEADER-FOOTER ============================== */
+
+    .hero__footer-img {
+        max-width: 33px;
+    }
+    /* ===== karaoke-rooms =========================== */
+        .karaoke-rooms__sub-title {
+        padding-top: 60px;
+    }
+    /* ======== answers ============================== */
+    .answers__decor-block {
+        top: auto;
+        left: -20%;
+        bottom: 7%;
+    }
+
+    /* ===== FOOTER =========================== */
+
+    .footer__logo {
+        width: 60%;
+    }
+
+    .footer__icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__button-img {
+        width: 44px;
+        height: 44px;
+    }
+}
