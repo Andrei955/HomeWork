@@ -7,7 +7,7 @@
 // console.log(calculateFinalPrice(100, 10, 0)); // 90
 
 function calculateFinalPrice(price, discount, tax) {
-    result = price * (1 - discount / 100) * (1 + tax);
+    let result = price * (1 - discount / 100) * (1 + tax);
     return result;
 }
 
@@ -18,10 +18,10 @@ console.log(calculateFinalPrice(100, 10, 0));
 // Напишите функцию checkAccess, которая принимает имя пользователя и пароль.
 // Если имя пользователя равно "admin" и пароль равен "123456", функция должна возвращать строку "Доступ разрешен", иначе — "Доступ запрещен".
 
-(function checkAccess(userName, password) {
-    userName = prompt("Ваше имя");
-    password = +prompt("пароль");
-    let entrance;
+(function checkAccess(entrance) {
+    let userName = prompt("Ваше имя");
+    let password = +prompt("пароль");
+    entrance;
     if ((userName == "admin" && password === 123456) || (userName == "user" && password === 123456)) {
         entrance = "доступ разрешен";
     } else {
@@ -39,7 +39,7 @@ console.log(calculateFinalPrice(100, 10, 0));
 // Если введённое значение не попадает в этот диапазон, возвращайте `"Некорректное время"`.
 
 (function getTimeOfDay(time) {
-    input = prompt("Склько сейчас времени ? Пример: 2 ");
+    let input = prompt("Склько сейчас времени ? Пример: 2 ");
     time = +input;
     if (input === null || input === "" || isNaN(time) || time < 0 || time > 23) {
         alert("неверный формат времени");
