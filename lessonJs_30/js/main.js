@@ -21,7 +21,7 @@ console.log(calculateFinalPrice(100, 10, 0));
 (function checkAccess(entrance) {
     let userName = prompt("Ваше имя");
     let password = +prompt("пароль");
-    entrance;
+    let entrance;
     if ((userName == "admin" && password === 123456) || (userName == "user" && password === 123456)) {
         entrance = "доступ разрешен";
     } else {
